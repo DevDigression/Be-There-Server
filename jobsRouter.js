@@ -10,16 +10,8 @@ const GLASSDOOR_URL =
 	"https://www.glassdoor.com/Job/api/json/search/jobProgression.htm?";
 
 router.get("/", (req, res) => {
-	let params = {
-		v: "1",
-		format: "json",
-		"t.p": "213919",
-		"t.k": "dckaIJmhJoa",
-		action: "jobs-prog",
-		jobTitle: "teacher",
-		countryId: 1
-	};
-
+	console.log(req);
+	let params = req.data;
 	let esc = encodeURIComponent;
 	let query = Object.keys(params)
 		.map(k => esc(k) + "=" + esc(params[k]))
