@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: Om1jbDPgx4f6PL4CN7Jgs0zctDOyZLv2WuGRDirZLd48D36BrkV912N2Im86+HscWtpvpbNyuiLKIdZjI4sJTPsvgEp7cDM2BjInv22CFADgGmLy3ThIBRlIr/3tj3zWTS7nzXViQW3W+XB1+uKhbHPphtV0e57Xa0OlXg62gYjDnk9W1u36LE5eCyRn3e212acYevWHnYYbZeBq6PfXod/HpcItGGGMTqlAj1P7OBY/thZ6KmbIoga0YirH63P/QKd/+CjklZkdN8uozJwAS0Z//YBcSmXAAptcJJEpGUqx3c4uzg2kLucrKQ3JLfaTl3YMKozi5RW182v0nkDxpo+WFHPwHMMMM3n4xy4WNjRUCykin3giNQG8lyb7SHBJVPFGPYt39+aeaCl68blopK9HNu6j7u9yzoqIl51HUlpyyCyRInHygJmO0SJ8q6b4ETj5TTJcnwpHtv9Bu9KJXjkGH1aWjNOWPr4bHx6i+FDSm4A8gfYBxs74ffrxxEfh7Y8TASk1juSYek0HDq18ayJ/i++TJCS3OwGjEW9oGgpV0BWlr2Rq/ofgWYdT+RVppiqteXD13jobKsmIq5LFvisuWd1OYauVC7MeXJcojj3Z1yyXTE6/5RIkG1lAKnxecvH5R0Z2C/QJfbyCJV+TuB9ZGMAOS/dWoO2dgRWsLnM=
+  app: Be-There-Server
+  on:
+    repo: DevDigression/Be-There-Server
