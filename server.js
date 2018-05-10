@@ -22,7 +22,7 @@ app.use(function(req, res, next) {
 
 const jobsRouter = require("./jobsRouter");
 
-app.use("https://be-there-server.herokuapp.com/", jobsRouter);
+app.use("/", jobsRouter);
 
 app.listen(process.env.PORT || 8080, () => {
 	console.log(`Your app is listening on port ${process.env.PORT || 8080}`);
