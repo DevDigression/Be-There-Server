@@ -9,6 +9,10 @@ const jsonParser = bodyParser.json();
 const GLASSDOOR_URL =
 	"https://www.glassdoor.com/Job/api/json/search/jobProgression.htm?";
 
+router.get("/", (req, res) => {
+	console.log("Server active");
+});
+
 router.get("/:job", (req, res) => {
 	let params = {
 		v: "1",
